@@ -25,6 +25,7 @@ Entry for National Novel Generation Month
 
 ## TODO:
 
+* Add links to code, readme on index.html
 * Switch to using github-pages branch and clear out master branch (??).
 * Add a package.json and switch markup to Jade
 * Get word substitution working (choose from an array of alternate words).
