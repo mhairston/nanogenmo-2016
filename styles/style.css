@@ -12,11 +12,17 @@ footer {
 }
 
 .page {
+  max-width: 900px;
   min-height: 100vh;
+  margin: 0 auto;
 }
 
 .c-main {
   padding: 1rem;
+}
+
+.c-link-rev {
+  color: #fff;
 }
 
 q {color: #900;}
