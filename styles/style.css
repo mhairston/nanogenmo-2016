@@ -1,0 +1,23 @@
+
+body {
+  font-family: Helvetica Neue;
+  margin: 0;
+}
+
+header,
+footer {
+  color: #fff;
+  background: #900;
+  padding: 0.5rem 1rem;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.c-main {
+  padding: 1rem;
+}
+
+q {color: #900;}
+q.is-done {color: #555;}
