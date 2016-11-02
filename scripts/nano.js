@@ -15,7 +15,7 @@ function choose(collection, space) {
 
 function resolveNode(node) {
   var alternatives = node.innerHTML;
-  if (alternatives.length > 1) {
+  if (alternatives.indexOf(sep) > 0) {
     node
       .html(choose(alternatives.split(sep)))
       .addClass('is-done');
@@ -23,7 +23,7 @@ function resolveNode(node) {
 }
 
 function writeNovel(novel) {
-  //$('q').each(resolveNode);
+  $('q').each(resolveNode);
 }
 
 var novel = document.querySelector('.c-main');
