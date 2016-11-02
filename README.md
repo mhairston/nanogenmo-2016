@@ -1,5 +1,5 @@
 # nanogenmo-2016
-Entry for National Novel Generation Month
+Entry for [National Novel Generation Month](https://github.com/NaNoGenMo/2016). See the most recent version of the output at [mhairston.github.io/nanogenmo-2016](http://mhairston.github.io/nanogenmo-2016).
 
 ## Philosophy:
 
@@ -26,9 +26,10 @@ Entry for National Novel Generation Month
 ## TODO:
 
 * Add links to code, readme on index.html
-* Switch to using github-pages branch and clear out master branch (??).
+* DONE Switch to using github-pages branch and clear out master branch (??).
 * Add a package.json and switch markup to Jade
 * Get word substitution working (choose from an array of alternate words).
+* Import [corpora](https://github.com/dariusk/corpora) data!
 * Figure out how persistence works. May require a classname on the elements that need to persist.
 * Write naming algorithms for the protagonist and the setting.
 * Styles: Constrain width of page.
