@@ -13,7 +13,7 @@ footer {
 
 .page {
   max-width: 900px;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0 auto;
 }
 
@@ -25,5 +25,7 @@ footer {
   color: #fff;
 }
 
-q {color: #900;}
-q.is-done {color: #555;}
+.i, .a {
+  display: inline-block;
+  margin-right: 0.125rem;
+}

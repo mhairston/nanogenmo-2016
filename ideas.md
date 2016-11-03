@@ -2,7 +2,7 @@
 
 ## A structure object
 
-* Interlude
+* interlude
   * interlude-error
   * interlude-code
   * interlude-instant-message

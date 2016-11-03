@@ -1,30 +1,35 @@
 var sep = '`';
 
 function rr(min, max) {
-  if (!max) {
-    max = min;
-    min = 0;
-  }
-  return Math.floor(Math.random()*(max - min) + min);
+  var rmin = (max) ? min : 0;
+  var rmax = (max) ? max : min;
+  return Math.random() * (rmax - rmin) + rmin;
+}
+
+function rri(min, max) {
+  return Math.floor(rr(min,max));
 }
 
 function choose(collection, space) {
   var after = (space) ? ' ' : '';
-  return collection[rr(collection.length)] + after;
+  return collection[rri(collection.length)] + after;
 }
 
-function resolveNode(node) {
-  var alternatives = node.innerHTML;
-  if (alternatives.indexOf(sep) > 0) {
-    node
-      .html(choose(alternatives.split(sep)))
-      .addClass('is-done');
+function resolve(el) {
+  var $el = $(el);
+  var altWords = $el.html().split(sep);
+  if ($el.size() > 0) {
+    $el.html(choose(altWords));
   }
 }
 
 function writeNovel(novel) {
-  $('q').each(resolveNode);
+  $('.a', novel).each(function(index, el) {
+    resolve(el);
+  });
 }
 
-var novel = document.querySelector('.c-main');
-writeNovel(novel);
+$(document).ready(function() {
+  var novel = document.querySelector('.c-main');
+  writeNovel(novel);
+});
