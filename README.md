@@ -1,5 +1,11 @@
 # nanogenmo-2016
-Entry for [National Novel Generation Month](https://github.com/NaNoGenMo/2016). See the most recent version of the output at [mhairston.github.io/nanogenmo-2016](http://mhairston.github.io/nanogenmo-2016).
+Entry for [National Novel Generation Month](https://github.com/NaNoGenMo/2016). 
+
+See the most recent version of the output at [mhairston.github.io/nanogenmo-2016](http://mhairston.github.io/nanogenmo-2016).
+
+## Requirements
+* "Novel" is defined very loosely but result must be 50K words+.
+* Q: Does the result need to be a fixed text, or can it be the program itself (i.e., different results every time)?
 
 ## Philosophy:
 
@@ -22,14 +28,3 @@ Entry for [National Novel Generation Month](https://github.com/NaNoGenMo/2016). 
 * Commit the day's changes and add a tag for the day.
 * Don't (pre|re)factor. Duplicate code like there's no tomorrow if you need to.
 
-
-## TODO:
-
-* Add links to code, readme on index.html
-* DONE Switch to using github-pages branch and clear out master branch (??).
-* Add a package.json and switch markup to Jade
-* Get word substitution working (choose from an array of alternate words).
-* Import [corpora](https://github.com/dariusk/corpora) data!
-* Figure out how persistence works. May require a classname on the elements that need to persist.
-* Write naming algorithms for the protagonist and the setting.
-* Styles: Constrain width of page.
