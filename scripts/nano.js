@@ -1,32 +1,19 @@
-var sep = '`';
 
-function rr(min, max) {
-  var rmin = (max) ? min : 0;
-  var rmax = (max) ? max : min;
-  return Math.random() * (rmax - rmin) + rmin;
-}
 
-function rri(min, max) {
-  return Math.floor(rr(min,max));
-}
-
-function choose(collection, space) {
-  var after = (space) ? ' ' : '';
-  return collection[rri(collection.length)] + after;
-}
-
-function resolve(el) {
-  var $el = $(el);
-  var altWords = $el.html().split(sep);
-  if ($el.size() > 0) {
-    $el.html(choose(altWords));
-  }
-}
-
+// Do all the text generation and processing in this function.
 function writeNovel(novel) {
-  $('.a', novel).each(function(index, el) {
-    resolve(el);
-  });
+  var src;
+  // $.get('../source_text/01.html', function(data) {
+  //   novel.append(data);
+  // });
+  // Processes run on the whole text;
+  // Choose text snippets when alternates are listed:
+  resolveAlternates(novel);
+  $src = $('.coretext01');
+  txt = $src.text();
+  $src.text(
+    scan(txt, 4)
+  );
 }
 
 $(document).ready(function() {
