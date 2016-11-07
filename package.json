@@ -1,0 +1,20 @@
+{
+  "name": "nanogenmo-2016",
+  "version": "1.0.0",
+  "description": "Entry for National Novel Generatiion Month 2016",
+  "main": "gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhairston/nanogenmo-2016.git"
+  },
+  "author": "Michael Hairston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhairston/nanogenmo-2016/issues"
+  },
+  "homepage": "https://github.com/mhairston/nanogenmo-2016#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-pug": "^1.0.0"
+  }
+}
