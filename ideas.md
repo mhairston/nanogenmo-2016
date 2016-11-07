@@ -1,5 +1,10 @@
 #Ideas
 
+
+## Use references from the (abandoned) generative book!
+
+Also http://algocomp.blogspot.com/2008/08/introduction.html
+
 ## A structure object
 
 * interlude
