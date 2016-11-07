@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     pug: {
       node: {
         files: {
-          'public/index.html': ['pages/*.pug']
+          'index.html': ['pages/*.pug']
         },
         options: {
           wrap: 'node'
@@ -14,14 +14,14 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: [ 'public' ]
+        src: [ 'dest' ]
       },
     },
 
     watch: {
       pug: {
         files: 'pages/**/*.pug',
-        tasks: [ 'pug' ]
+        tasks: [ 'build' ]
       }
     },
 
